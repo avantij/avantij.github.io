@@ -148,13 +148,13 @@
              window.onscroll = function() {scroll()};
             function scroll() {
                 var height = document.body.offsetHeight - window.innerHeight;
-                if (document.body.scrollTop < height/5) {
+                if (document.body.scrollTop < .3) {
                     color1();
                     document.getElementById("navtop").className = "active";
-                } else if(document.body.scrollTop > height/5 && document.body.scrollTop < .4*height) {
+                } else if(document.body.scrollTop > .3 && document.body.scrollTop < .5*height) {
                     color1();
                     document.getElementById("navabout").className = "active";
-                } else if(document.body.scrollTop > .4*height && document.body.scrollTop <.7*height) {
+                } else if(document.body.scrollTop > .5*height && document.body.scrollTop <.7*height) {
                     color1();
                     document.getElementById("navedu").className = "active";
                 } else if(document.body.scrollTop > (.7)*height && document.body.scrollTop <(.92)*height) {
