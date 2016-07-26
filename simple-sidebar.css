@@ -3,8 +3,12 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+.active {
+    background-color: rgba(255,255,255,0.9);
+}
 
- body {
+
+body {
     overflow-x: hidden;
     font-family: 'Raleway'; 
  }
@@ -24,6 +28,8 @@ div.row{
      padding: 70px;
 
 }
+
+
 #AboutMe {
     background-color: #879BAF;
     padding: 200px;
@@ -117,6 +123,7 @@ div.row{
     color: #fff;
     background: rgba(255,255,255,0.2);
 }
+
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
