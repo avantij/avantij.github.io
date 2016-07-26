@@ -26,6 +26,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
     <script > 
         function color1() {
          if (document.getElementById("navtop").className.match("active")) {
@@ -76,6 +78,8 @@
          color1();
          document.getElementById("navcontact").className = "active"; 
         }
+       
+
     </script>
 </head>
 
@@ -109,7 +113,7 @@
 
         <!-- Page Content -->
        <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <div class="container-fluid" onscroll="scroll()">
                 <div class="row">
                     <center><div class="col-lg-12" id = "head">
                         <center> <h1>Avanti Joshi</h1> </center>
@@ -134,6 +138,28 @@
                     </div>
                 </div>
             </div>
+            <script>
+             window.onscroll = function() {scroll()};
+            function scroll() {
+                var height = document.body.offsetHeight - window.innerHeight;
+                if (document.body.scrollTop < height/5) {
+                    color1();
+                    document.getElementById("navtop").className = "active";
+                } else if(document.body.scrollTop > height/5 && document.body.scrollTop < .50*height) {
+                    color1();
+                    document.getElementById("navabout").className = "active";
+                } else if(document.body.scrollTop > .5*height && document.body.scrollTop <.8*height) {
+                    color1();
+                    document.getElementById("navedu").className = "active";
+                } else if(document.body.scrollTop > (.8)*height && document.body.scrollTop <(.95)*height) {
+                    color1();
+                    document.getElementById("navmission").className = "active";
+                } else if (document.body.scrollTop > (.9)*height) {
+                    color1();
+                    document.getElementById("navcontact").className = "active";
+                }
+       }
+    </script>
         </div> 
         <!-- /#page-content-wrapper -->
 
