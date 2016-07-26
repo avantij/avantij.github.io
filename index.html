@@ -12,10 +12,11 @@
     <title>Simple Sidebar - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="simple-sidebar.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
@@ -25,7 +26,57 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script > 
+        function color1() {
+         if (document.getElementById("navtop").className.match("active")) {
+            document.getElementById("navtop").className = ""; 
+         }
+        
+         if (document.getElementById("navabout").className.match("active")) {
+            document.getElementById("navabout").className = ""; 
+         }
 
+         if (document.getElementById("navedu").className.match("active")) {
+            document.getElementById("navedu").className = ""; 
+         }
+
+         if (document.getElementById("navmission").className.match("active")) {
+            document.getElementById("navmission").className = ""; 
+         }
+
+         if (document.getElementById("navcontact").className.match("active")) {
+            document.getElementById("navcontact").className = ""; 
+         }
+
+     }
+
+       function change1() {
+         color1();
+         document.getElementById("navtop").className = "active"; 
+        }
+
+        function change2() {
+         document.getElementById("navtop").className = ""
+         color1();
+         document.getElementById("navabout").className = "active"; 
+        }
+
+        function change3() {
+         document.getElementById("navtop").className = ""
+         color1();
+         document.getElementById("navedu").className = "active"; 
+        }
+       
+        function change4() {
+         color1();
+         document.getElementById("navmission").className = "active"; 
+        }
+
+        function change5() {
+         color1();
+         document.getElementById("navcontact").className = "active"; 
+        }
+    </script>
 </head>
 
 <body>
@@ -34,22 +85,22 @@
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
+                <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                 </li>
                 <li>
-                    <a href = "#">Top</a>
+                    <a href = "#" id="navtop" class="active" onclick="change1()">Top</a>
                 <li>
-                    <a href="#AboutMe">About</a>
+                    <a href="#AboutMe" id="navabout" onclick="change2()">About</a>
                 </li>
                 <li>
-                    <a href="#edu">Education</a>
+                    <a href="#edu" id = "navedu" onclick="change3()">Education</a>
                 </li>
                 <li>
-                    <a href="#mission">Mission</a>
+                    <a href="#mission" id="navmission" onclick="change4()">Mission</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" id="navcontact" onclick="change5()">Contact</a>
                 </li>
                 
             </ul>
