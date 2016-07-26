@@ -10,13 +10,17 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Raleway'; 
+    font-family: 'Josefin Sans'; 
  }
 
 h1 {
-    font-family: 'Raleway'; 
+    font-family: 'Josefin Sans'; 
     color: #F3A1B9;
-    font-size: 130px; 
+    font-size: 150px; 
+}
+
+h2 {
+    font-size: 90px;
 }
 
 div.row{
@@ -33,21 +37,25 @@ div.row{
 #AboutMe {
     background-color: #879BAF;
     padding: 200px;
+    font-size: 30px;
 }
 
 #edu {
     background-color: #99CED4;
     padding: 200px;
+    font-size: 30px;
 }
 
 #mission {
     background-color: #F3A1B9;
     padding: 200px;
+    font-size: 30px;
 }
 
 #contact {
     background-color: #879BAF;
     padding: 200px;
+    font-size: 30px;
 }
 /* Toggle Styles */
 
