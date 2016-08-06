@@ -172,13 +172,13 @@
                 </div>
             </div>
             <script>
-             window.onscroll = function() {scroll()};
+              window.onscroll = function() {scroll()};
             function scroll() {
                 var height = document.body.offsetHeight - window.innerHeight;
-                if (document.body.scrollTop < .3) {
+                if (document.body.scrollTop < .1*height) {
                     color1();
                     document.getElementById("navtop").className = "active";
-                } else if(document.body.scrollTop > .3 && document.body.scrollTop < .5*height) {
+                } else if(document.body.scrollTop > .1*height && document.body.scrollTop < .5*height) {
                     color1();
                     document.getElementById("navabout").className = "active";
                 } else if(document.body.scrollTop > .5*height && document.body.scrollTop <.7*height) {
